@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bofisbu.shopfile.site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">bofisbu<span>.shopfile.site</span></div>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#topup">Nạp tiền</a>
+      <a href="#dashboard">Tài khoản</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to <span>bofisbu.shopfile.site</span></h1>
+    <p>Kho file kỹ thuật số, công cụ tiện ích cá nhân & tài nguyên online</p>
+    <button onclick="scrollToProducts()">Xem danh mục</button>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Danh mục sản phẩm</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>File Data Premium</h3>
+        <p>Tài nguyên chất lượng cao.</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <h3>Script & Macro</h3>
+        <p>Tối ưu công việc và tự động hóa.</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <h3>Plugin tiện ích</h3>
+        <p>Phù hợp cho designer và developer.</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <h3>Proxy & Network Tools</h3>
+        <p>Bảo mật, tối ưu kết nối.</p>
+        <button>Mua ngay</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="topup" class="topup">
+    <h2>Nạp tiền vào tài khoản</h2>
+    <div class="topup-container">
+      <div class="card-topup">
+        <h3>Nạp bằng thẻ cào</h3>
+        <input type="text" placeholder="Mã thẻ" id="cardCode">
+        <input type="text" placeholder="Số seri" id="cardSerial">
+        <button onclick="addTopupHistory()">Nạp ngay</button>
+      </div>
+      <div class="bank-topup">
+        <h3>Nạp qua ngân hàng</h3>
+        <p>Chủ tài khoản: <b>Nguyễn Văn Chủ</b></p>
+        <p>Số TK: <b>123456789 - Vietcombank</b></p>
+        <img src="assets/qrcode.png" alt="QR nạp tiền" class="qr">
+      </div>
+    </div>
+    <div id="topupHistory">
+      <h3>Lịch sử nạp</h3>
+      <ul></ul>
+    </div>
+  </section>
+
+  <section id="dashboard" class="dashboard">
+    <h2>Tài khoản & Quản trị</h2>
+    <button onclick="toggleLogin()">Đăng nhập</button>
+    <button onclick="toggleRegister()">Đăng ký</button>
+    <div id="authContainer"></div>
+  </section>
+
+  <footer>
+    <p>© 2024 bofisbu.shopfile.site — Designed by Admin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
